@@ -1,2 +1,2 @@
-# learn-golang
-Learning Golang
+# Learning Golang
+Golang for cloud
