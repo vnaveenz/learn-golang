@@ -1,2 +1,2 @@
-# Learning Golang
+# Trying Golang
 Golang for cloud
