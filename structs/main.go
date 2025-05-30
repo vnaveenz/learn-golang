@@ -8,6 +8,14 @@ type person struct {
 }
 
 func main() {
-	alex := person{firstName: "Alex", lastName: "Lanier"}
-	fmt.Println(alex)
+	// First way of defining structs
+	//alex := person{"Alex", "Lanier"}
+	// Second way
+	// alex := person{firstName: "Alex", lastName: "Lanier"}
+	// Third way
+	var alex person
+	fmt.Printf("%+v", alex)
+	alex.firstName = "Alex"
+	alex.lastName = "Lanier"
+	fmt.Printf("%+v", alex)
 }
