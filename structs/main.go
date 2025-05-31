@@ -33,4 +33,20 @@ func main() {
 		},
 	}
 	fmt.Printf("%+v", alex)
+	fmt.Println("Second Print")
+	alex.print()
+	alex.updateName("John");
+	alex.print()
+	fmt.Println("\n Print using pointer")
+	greatProgram()
+}
+
+// adding receiver function
+
+func (p person) print() {
+	fmt.Printf("%+v", p)
+}
+
+func (p person) updateName(name string) {
+	p.firstName = name;
 }
